@@ -10,13 +10,10 @@
   </shared-search-box>
   </div>
 </div>
+
 <div class="row">
   <div class="col">
     <hr>
-    <ul>
-      <li *ngFor="let country of countries">
-        {{country.name}} - {{country.population}}
-      </li>
-    </ul>
+    <countries-table [countries]="countries"></countries-table>
   </div>
 </div>
